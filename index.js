@@ -8,10 +8,10 @@ function newTask(title, description) {
     title: title,
     description: description,
     complete: false,
-    logState: function () {
+    logState: function() {
       console.log(`${this.title} has${this.complete ? " " : " not "}been completed`);
     },
-    markCompleted: function () {
+    markCompleted: function() {
       this.complete = true;
     }
   };
